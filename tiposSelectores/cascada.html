@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascada/Especificidad</title>
+    <style>
+        #brancori{
+            color:orange;
+            font-size: 40px;
+            margin: 15px;
+        }
+        .master {
+            color:springgreen;
+        }
+        #bloque{
+            background-color: salmon;
+            color:brown;
+            width: 120px;
+            height: 30px;
+            margin: 15px;
+        }
+        a{
+            background-color: greenyellow;
+            margin: 15px;
+        }
+        button{
+            background-color: slateblue;
+            width: 100px;
+            height: 60px;
+            font-size: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="bloque" class="master"> Bloque ✈</div>
+    <a href="/">inline</a>
+    <button>Solo de prueba</button>
+    <div id="brancori" class="master" >Brancori ✈</div>
+    <p>Aquí esta la clase de Cascada-Especificidad, display "Block, inline, inline-block, flex, grid"</p>
+</body>
+</html>
