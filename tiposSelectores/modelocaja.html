@@ -16,12 +16,14 @@
             box-sizing: border-box;
             border: 1px solid brown;
             margin: 5px;
-            /*los margenes se colapsan entre sei*/ 
+            /*los margenes se colapsan entre sei*/
+            z-index: 6; 
         }
         #flex{
             display: flex;
             flex-direction: column;
             font-size: 25px;
+            z-index: 2;
         }
         p{
             font-size: 30px;
@@ -55,6 +57,7 @@
             font-size: 40px;
             color: aliceblue;
             top: 0;
+            z-index: 1;
         }
         .lorem{
             font-family: Century gothic;
@@ -63,6 +66,7 @@
         ul p{
             position: sticky;
             top: 0;
+            z-index: 7;
         }
     </style>
 </head>
@@ -76,6 +80,9 @@
     <div class="container">
         <div class="item"></div>
     </div>
+    <section>
+        
+    </section>
     <nav> Fija el objeto nav con "POSITION" y lo fijamos en parte de arriba con "TOP"</nav>
         <p class="lorem">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
