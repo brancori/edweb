@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores-pseudoclases, pseudoelementos</title>
+    <style>
+        p 
+        {
+            color: salmon;
+        }
+        p::first-letter{
+            color:black;
+        }
+        p::before{
+            content: " 📙  ";
+        }
+        p::after{
+            content: " 🎟  " ;
+            }
+        p:hover
+        {
+            color:skyblue;
+        }
+        div p:nth-child(1){
+            color:red;
+        }
+        ::placeholder{
+            color: blue;
+        }
+        
+        //"al parecer esto no entra en el código pero no estoy seguro"//
+
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Las Pseduo clases son con ":" "active", "focus", "hover", "nth-child(n)</p>
+        <p>Pseudoelementos "::" "after", "before", "first-letter", "placeholder" </p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
