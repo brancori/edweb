@@ -35,14 +35,30 @@ div {
     background: yellow;
     z-index: 6;
 }
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
 .card{
     width: 300px;
     height: 300px;
     background: orange;
     border-radius: 20px;
+    overflow: hidden;
+    margin-top: 50px;
 }
 .card img{
     width: 100%;
+}
+.card p{
+    text-align: center;
+    font-size: 16px;
+    font-family: Century gothic;
+}
+.card p:nth-child(3){
+    color: white;
 }
 </style> 
 <body>
@@ -56,8 +72,12 @@ div {
         </div>
         <p></p>
     </section>
+   <section class="cat">
     <div class="card">
         <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <p>Name: Nightcrawler</p>
+        <p>Power: This cast is invisible at night</p>
     </div>
+   </section> 
 </body>
 </html>
