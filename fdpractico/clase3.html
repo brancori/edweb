@@ -87,17 +87,18 @@
             font-weight: bold;
             height: 50px;
             margin-top: 16px;
-            backdrop-filter: ;
-
         }
         .login-button{
             margin-top: 14px;
             margin-bottom: 30px;
         }
-
-        @media (max-width: 640){
-            .logo{
+        @media(max-width: 640px){
+            .logo {
                 display: block;
+            }
+            .singup-button {
+                position: absolute; bottom: 20px; 
+                width: inherit;
             }
         }
     </style>
@@ -109,7 +110,7 @@
 
         <form action="/" class="form">
             <label for="email" class="label">Correo Electronico</label>
-            <input type="text" id="emai" placeholder="maria@example.com" class="input input-email">
+            <input type="email" id="emai" placeholder="manycrochet@example.com" class="input input-email">
 
             <label for="new-passdword" class="label">Contraseña</label>
             <input type="password" id="-new-password" placeholder="*********" class="input input-password">
@@ -117,7 +118,8 @@
             <input type="submit" value="Ingresar" class="primary-button login-button">
             <a href="/">Olvide mi contraseña</a>
         </form>
-        <button class="secondary-button">Salir</button>
+
+        <button class="secondary-button singup-button">Salir</button>
       </div> 
     </div>
 </body>
