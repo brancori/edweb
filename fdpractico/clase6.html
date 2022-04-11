@@ -21,185 +21,354 @@
             margin: 0;
             font-family: 'Quicksand', sans-serif;
         }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card{
+            width: 240px;
+        }
+        .product-card img{
+            width: 240px;
+            height: 240 px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .producto-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        .producto-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: (--md);
+            margin-top: 0px;
+            margin-bottom: 4px;
+            color: var(--very-light-pink)
+        }
+        .producto-info div p:nth-child(2){
+            font-size: (--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+        .producto-info figure{
+            margin: 0;
+        }
+        .producto-info figure img{
+            width: 35px;
+        }
+        @media(max-width:640px){
+            .cards-container{
+            grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product-card{
+            width: 140px;
+        }
+        .product-card img{
+            width: 140px;
+            height: 140 px;
+        }
+        .producto-info{
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: center;
+        }
+        }
 </style>
 <body>
     <section class="main-container">
         <div class="cards-container">
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
             </div>
 
             <div class="product-card">
-                <img src="" alt="" class="product">
-                <div>
-                    <p>$120.00</p>
-                    <p>bike</p>
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./logo/compra+.png" alt="agregar compra">
-                </figure>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/ane_with.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Ane with one E</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./articulos/voldi.png" alt="" class="product">
+                <div class="producto-info">
+                    <div>
+                        <p>$120.00</p>
+                        <p>Lord Voldemort</p>
+                    </div>
+                    <figure class="catalogo">
+                        <img src="./logo/compra+.png" alt="agregar compra">
+                    </figure>
+                </div>
             </div>
 
         </div>
