@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background: rgb(68, 68, 68);
+            color: orange;
+            font-family: century gothic;
+        }
+        .main-container img{
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 20px;
+            z-index: 1;
+            
+        }
+        .main-container img:hover{
+            width: 170px;
+            height: 120px;
+            border: 6px solid  coral;
+        }
+        p:nth-child(1){
+            font-size: 30px;
+        }
+        p a{
+            color: aliceblue;
+        }
+        .diego {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+        .main-container{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        ul li{
+            align-items: start;
+            width: 150px;
+            margin: 15px 15px;
+            
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(255, 255, 255);
+            font-size: large;
+        }
+        .tipo{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-align: center;
+        }
+        .lista a:hover{
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            background: rgb(201, 90, 0);
+            border-radius: 8px;
+            font-weight: bold;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div>
+        </div>
+        <p>Mi lista del super para:<br> <span class="diego"> Diego de Granda</span></p>
+        <ul class="main-container">
+            <div>
+                <li class="tipo">FRUTAS</li>
+                    <ol class="lista"> 
+                        <li><a href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/18-recetas-con-mango-para-aprovechar-la-temporada-al-maximo">Mango</a></li>  
+                        <img src="./img/mango.jfif" alt="Mango">
+                        <li><a href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/pan-con-queso-kiwi-y-almendras-tostadas">Kiwi</a></li>
+                        <img src="./img/kiw.jfif" alt="Kiwi">
+                        <li><a href="https://www.kiwilimon.com/receta/carnes-y-aves/lomo-relleno-con-salsa-de-tamarindo">Tamarindo</a></li>
+                        <img src="./img/tamar.jfif" alt="Tamarindo">
+                    </ol>
+            </div>
+
+            <div>
+                <li class="tipo">CARNES</li>
+                    <ol class="lista">
+                        <li><a href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/15-deliciosos-platillos-con-carne-molida-para-toda-ocasion">Carne Molida</a></li>
+                        <img src="./img/molida.jfif" alt="Molida">
+                        <li><a href="https://www.kiwilimon.com/tips/tips-de-cocina/tecnicas-de-coccion/8-recetas-para-disfrutar-de-un-toque-de-sabor-ahumado">Chuleta</a></li>
+                        <img src="./img/chule.jfif" alt="Chuleta">
+                        <li><a href="https://www.kiwilimon.com/receta/carnes-y-aves/res/guisados-de-carne/sandwich-de-falda-de-res">Falda de Res</a></li>
+                        <img src="./img/falda.jfif" alt="falda de Res">
+                    </ol>
+                
+            </div>
+            
+            <div>
+                <li class="tipo"> REPOSTERIA </li>
+                    <ol class="lista"> 
+                        <li><a href="https://www.kiwilimon.com/receta/panes/rosca-de-reyes-de-harina-para-hot-cakes">Harina</a></li>
+                        <img src="./img/harina.jfif" alt="Harina">
+                        <li><a href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/7-increibles-formas-de-hacer-pastel-de-chocolate">Chocolate</a></li>
+                        <img src="./img/choco.jfif" alt="chocolate">
+                        <li><a href="https://www.kiwilimon.com/receta/postres/pays/pays-de-nuez/pay-frio-de-nuez">Nuez</a></li>
+                        <img src="./img/nuez.jfif" alt="Nuez">
+                    </ol>
+            </div>
+        </ul>
+        <p>Todas las recetas aquí mostradas son parte <a href="www.kiwilimon.com">Kiwilimon</a></p>
+
+    </main>
+    
+</body>
+</html>
