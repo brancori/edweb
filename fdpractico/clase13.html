@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    :root{
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #F08080;
+        --text-input-fiel: #bbbbbb;
+        --subtitle-grey: #808080;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .sing-out {
+        background-color: var(--very-light-pink);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+        }
+        .my-order{
+            width: 100%;
+            height: 100vh;
+            place-items: center;
+        }
+        .my-order-container{
+            padding: 10px;
+            position:absolute;
+            right: 0;
+            width: 450px;
+            overflow-y: scroll;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .head img{
+            display: flex;
+            
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+        }
+        .title{
+            justify-content: center;
+            font-size: 30px;
+            color: var(--very-light-pink);
+        }
+        .order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            text-align: center;
+            object-fit: cover;
+            align-items: center;
+        }
+        .shopping-cart figure{
+            margin: 15px;
+        }
+        .shopping-cart figure img {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+        }
+        .shopping-cart p:nth-child(2){
+            color: var(--text-input-fiel);
+        }
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--lg);
+            font-weight: bold;
+            color: var(--very-light-pink);
+        }
+        .total p{
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 18px;
+        }
+        .total span:nth-child(1){
+            color: var(--subtitle-grey);
+        }
+        @media (max-width: 640px){
+            .my-order-container{
+            width: 350px;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <div class="head">
+                <img src="./logo/flechita.png" alt="felchita">
+                <p class="title">Mi orden</p>
+            </div>
+            
+            <div class="shopping-cart">            
+            <figure>
+                <img src="./articulos/voldi.png" alt="voldi">
+            </figure>
+            <p>Lord Voldemort</p>
+            <p>$560.00</p>
+            </div>
+
+            <div class="shopping-cart">            
+                <figure>
+                    <img src="./articulos/ane_with.png" alt="Ane">
+                </figure>
+                <p>Ane with an E</p>
+                <p>$660.00</p>
+            </div>
+
+            <div class="shopping-cart">            
+            <figure>
+                <img src="./articulos/voldi.png" alt="voldi">
+            </figure>
+            <p>Lord Voldemort</p>
+            <p>$560.00</p>
+            </div>
+
+            <div class="shopping-cart">            
+                <figure>
+                    <img src="./articulos/ane_with.png" alt="Ane">
+                </figure>
+                <p>Ane with an E</p>
+                <p>$660.00</p>
+            </div>
+            <div class="total">
+                <p>
+                    <span>Total</span>
+                    <span> $2,400.00</span>
+                </p>
+            </div>
+            
+            <button class="sing-out">
+                <div class="order">
+                    <p> Salir</p>
+                    </p>
+                </div>
+                
+            </button>
+        </div>
+    </div>
+
+
+</body>
+</html>
