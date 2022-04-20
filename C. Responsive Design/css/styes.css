@@ -44,7 +44,7 @@ header img{
 }
 .header-title-container {
     width: 90%;
-    min-width: 288;
+    min-width: 288px;
     max-width: 900px;
     height: 218px;
     margin-top: 40px;
@@ -362,9 +362,9 @@ main{
     color: #808080;
  }
  .bitcoin-img-container {
-     width: 90%;
+     width: 100%;
      height: 380px;
-     min-width: 320PX;
+     min-width: 320px;
      background-image: url('../assets/img/bitcoinbaby2x.jpg');
      background-size: cover;
      background-position: center;
@@ -434,13 +434,19 @@ main{
   line-height: 1.8rem;
   color: var(--black);
 }
-.plans-container--slider span{
+.plans-container--slider .orange-arrow{
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-left: 10px;
     vertical-align: text-bottom;
     background-image: url('../assets/icons/orange-right-arrow.svg');
+}
+.plans-container--slider .money-sing{
+    font-size: 12px;
+    position: absolute;
+    top: 45px;
+    left: 50px;
 }
 .plan-cars{
     box-shadow:  0px 4px 8px rgba(89, 73,30, 0.16);
@@ -453,6 +459,7 @@ main{
     background-color: var(--bitcoin-orange);
     margin-top: 60px;
     position: inherit;
+    text-align: center;
 }
 .footer-container .image-footer{
     display: inline-block;
