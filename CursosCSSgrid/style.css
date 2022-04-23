@@ -1,0 +1,105 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(142, 231, 154);
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    border: 1px solid gray;
+}
+.item{
+    font-size: 4rem;
+}
+.container .item1{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.container .item2{
+    background-color: rgb(82, 189, 88);
+    border: 5px solid #f8bbd0;
+    grid-row: 2 / 4;
+}
+.container .item3{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-area: 2 / 2 / 4 / 4;
+}
+.container .item4{
+    background-color: rgb(70, 196, 76);
+    border: 5px solid #f8bbd0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.container_2{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(142, 231, 154);
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: 
+    "header header header"
+   "side main main"
+   "side main main"
+   "footer footer footer";
+    border: 1px solid gray;
+    place-content: center;
+}
+.container_2 .ito1{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-area: header;
+}
+.container_2 .ito2{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-area: side;
+}
+.container_2 .ito3{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-area:  main;
+}
+.container_2 .ito4{
+    background-color: rgb(32, 184, 39);
+    border: 5px solid #f8bbd0;
+    grid-area:  footer;
+}
+.reto{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(142, 231, 154);
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    border: 1px solid gray;
+    place-content: center;
+}
+.reto .ito1{
+    background-color: rgb(187, 255, 50);
+}
+.reto .ito2{
+    background-color: rgb(110, 165, 1);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.reto .ito3{
+    background-color: rgb(61, 87, 9);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.reto .ito4{
+    background-color: rgb(187, 255, 50);
+}
+.reto .ito5{
+    background-color: rgb(187, 255, 50);
+}
+.reto .ito6{
+    background-color: rgb(110, 165, 1);
+}
+.reto .ito7{
+    background-color: rgb(61, 87, 9);
+}
