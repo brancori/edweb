@@ -2,6 +2,10 @@
 //* Papel = 2 *//
 //* Tijera= 3 *//
 
+function resultado(yo, tu){
+    return 
+}
+
 var yo ="piedra";
 
 if (yo == "piedra"){
@@ -16,15 +20,15 @@ else if (yo == "tijera"){
 
 var tu ="papel";
 
-if (yo == "piedra"){
+if (tu == "piedra"){
     console.log("1")
 }
-if (yo == "papel"){
+if (tu == "papel"){
     console.log("2")
 }
-else if (yo == "tijera"){
+else if (tu == "tijera"){
     console.log("3")
 }
-var tu ="papel";
+
 
     
